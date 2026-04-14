@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <div className="bg-[#244D3F] pt-20 pb-10">
             <div className="max-w-277.5 flex flex-col items-center justify-center w-full container mx-auto text-white gap-4">
-                <h2 className="text-8xl font-bold">KeenKeeper</h2>
+                <h2 className="text-5xl font-bold">KeenKeeper</h2>
                 <p className="text-[16px] text-white/80">Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
                 <div className="flex flex-col items-center gap-4 mt-2">
                     <p className="text-[20px]">Social Links</p>
