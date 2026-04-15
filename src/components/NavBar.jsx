@@ -19,7 +19,7 @@ const NavBar = () => {
                     <FaHome className="text-xl" />
                     <span className="leading-none text-[16px]">Home</span>
                 </Link>
-                <Link href="/timeline" className={ `${pathname === '/timeline' ? 'text-white bg-[#244D3F]' : ''} flex items-center gap-1 p-2 rounded-md` }>
+                <Link href="/Timeline" className={ `${pathname === '/Timeline' ? 'text-white bg-[#244D3F]' : ''} flex items-center gap-1 p-2 rounded-md` }>
                     <RiTimeLine className="text-xl"/>
                     <span className="leading-none text-[16px]">Timeline</span>
                 </Link>
