@@ -1,5 +1,4 @@
-
-export default function FriendsDetailsPage() {
+export default function TimelinePage() {
     return (
         <main className="flex flex-col flex-1 items-center justify-center bg-[#F8FAFC] dark:bg-black">
             <h1 className="text-3xl font-bold mb-4">Friends Details Page</h1>

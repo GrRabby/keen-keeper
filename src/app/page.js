@@ -9,9 +9,9 @@ export default function Home() {
   const allFriends = JSON.parse(jsonData);
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-[#F8FAFC] dark:bg-black">
-        <Banner></Banner>
-        <Summary allFriends={allFriends}></Summary>
-        <AllFriends allFriends={allFriends} />
+      <Banner></Banner>
+      <Summary allFriends={allFriends}></Summary>
+      <AllFriends allFriends={allFriends} />
     </div>
   );
 }

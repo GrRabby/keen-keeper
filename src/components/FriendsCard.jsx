@@ -1,3 +1,5 @@
+
+import { TimelineContext } from "@/Context/Context";
 import Image from "next/image";
 import Link from "next/link";
 

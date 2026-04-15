@@ -8,7 +8,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 const NavBar = () => {
     const pathname = usePathname()
-    console.log(pathname)
     return (
         <div className="navbar bg-base-100 shadow-sm px-20">
             <div className="navbar-start">
