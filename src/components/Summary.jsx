@@ -1,5 +1,10 @@
 
-const Summary = ({allFriends}) => {
+import fs from 'fs/promises';
+import path from 'path';
+const Summary = async() => {
+    const filePath = path.join(process.cwd(), 'public', 'data.json');
+    const jsonData = await fs.readFile(filePath, 'utf-8');
+    const allFriends = JSON.parse(jsonData);
     const onTrack = allFriends.filter(friend => friend.status === 'On-Track').length;
     const needAttention = allFriends.filter(friend => friend.status === 'Almost Due').length;
     const interactionsThisMonth = allFriends.filter(friend => friend.days_since_contact < 30).length;

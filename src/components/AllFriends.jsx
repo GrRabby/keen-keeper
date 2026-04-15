@@ -1,8 +1,12 @@
 
 
 import FriendsCard from './FriendsCard';
-
-const AllFriends = ({allFriends}) => {
+import fs from 'fs/promises';
+import path from 'path';
+const AllFriends = async () => {
+    const filePath = path.join(process.cwd(), 'public', 'data.json');
+    const jsonData = await fs.readFile(filePath, 'utf-8');
+    const allFriends = JSON.parse(jsonData);
     return (
         <div className="flex flex-col items-start justify-start gap-4 w-full max-w-277.5 mb-10">
             <hr className="h-px border-none w-full bg-[#1A8862]/20 mt-10"/>
