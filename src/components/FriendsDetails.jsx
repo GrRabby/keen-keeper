@@ -24,14 +24,14 @@ const FriendsDetails = ({ selectedFriend }) => {
             timestamp: new Date().toLocaleString()
         }]);
         toast.success(`${type} with ${selectedFriend.name} !`, {
-                    position: "top-right"
+                    position: "top-center",
         });
     };
     const badge_style = statusStyles[selectedFriend.status] || 'bg-gray-400 text-white';
     return (
         <div className="grid grid-cols-[auto_1fr] gap-6 w-full max-w-277.5 py-20">
             <div className='flex flex-col gap-2'>
-                <div className='flex flex-col justify-center items-center gap-2 bg-white rounded-lg p-6 w-full shadow-sm mb-2 max-w-87.5'>
+                <div className='flex flex-col justify-center items-center gap-2 bg-white rounded-lg p-6 w-full shadow-sm mb-2 max-w-87.5 flex-1'>
                     <Image src={selectedFriend.picture} alt={selectedFriend.name} width={80} height={80} className='rounded-full' />
                     <h2 className='font-semibold text-[20px]'>{selectedFriend.name}</h2>
                     
