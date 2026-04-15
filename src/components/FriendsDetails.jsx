@@ -21,7 +21,18 @@ const FriendsDetails = ({ selectedFriend }) => {
         setTimeline(pre => [...pre,{
             name: selectedFriend.name,
             type : type,
-            timestamp: new Date().toLocaleString()
+            timestamp: new Date().toLocaleString(),
+            timeText : new Date()
+                .toLocaleString('en-GB', {
+                    day: '2-digit',
+                    month: 'short',
+                    year: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit',
+                    hour12: false
+                })
+                .replace(',', ' | ')
         }]);
         toast.success(`${type} with ${selectedFriend.name} !`, {
                     position: "top-center",
