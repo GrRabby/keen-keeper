@@ -11,7 +11,7 @@ export default function TimelinePage() {
     const {timeline} = useContext(TimelineContext)
     const [filteredTimeline,setfilteredTimeline] = useState(timeline)
     
-    
+    console.log(timeline)
     React.useEffect(() => {        
         let filtered = timeline.filter(item => {
             if(filter === "All"){
