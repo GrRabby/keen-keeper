@@ -10,7 +10,7 @@ const NavBar = () => {
     const pathname = usePathname()
     return (
         <div className="navbar bg-base-100 shadow-sm sm:flex-row justify-between px-20 flex-col gap-5">
-            <div className="navbar-start">
+            <div>
                 <Image src={Logo} alt="Logo" />
             </div>
 

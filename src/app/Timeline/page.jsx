@@ -1,6 +1,6 @@
 "use client"
 import { TimelineContext } from '@/Context/Context';
-import React, { use, useContext, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import CallLogo from "@/assets/call.png"
 import VideoLogo from "@/assets/video.png"
 import TextLogo from "@/assets/text.png"

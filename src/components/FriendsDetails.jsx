@@ -36,6 +36,7 @@ const FriendsDetails = ({ selectedFriend }) => {
         }]);
         toast.success(`${type} with ${selectedFriend.name} !`, {
                     position: "top-center",
+                    className : "max-w-[60vw]"
         });
     };
     const badge_style = statusStyles[selectedFriend.status] || 'bg-gray-400 text-white';
