@@ -5,8 +5,8 @@ import XLogo from "../assets/twitter.png";
 import Image from "next/image";
 const Footer = () => {
     return (
-        <div className="bg-[#244D3F] pt-20 pb-10">
-            <div className="max-w-277.5 flex flex-col items-center justify-center w-full container mx-auto text-white gap-4">
+        <div className="bg-[#244D3F] pt-20 pb-10 px-5">
+            <div className="max-w-277.5 flex flex-col items-center justify-center w-full container mx-auto text-white gap-4 text-center">
                 <h2 className="text-5xl font-bold">KeenKeeper</h2>
                 <p className="text-[16px] text-white/80">Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
                 <div className="flex flex-col items-center gap-4 mt-2">
@@ -18,7 +18,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <hr className="h-px border-none w-full bg-[#1A8862]/20 mt-10"/>
-                <div className="flex justify-between items-center w-full mt-5">
+                <div className="flex justify-between items-center w-full mt-5 flex-col md:flex-row gap-4">
                     <p className="text-[#FAFAFA]/50 text-[16px]">
                         &copy; 2026 KeenKeeper. All rights reserved.
                     </p>

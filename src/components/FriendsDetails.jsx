@@ -40,9 +40,9 @@ const FriendsDetails = ({ selectedFriend }) => {
     };
     const badge_style = statusStyles[selectedFriend.status] || 'bg-gray-400 text-white';
     return (
-        <div className="grid grid-cols-[auto_1fr] gap-6 w-full max-w-277.5 py-20">
-            <div className='flex flex-col gap-2'>
-                <div className='flex flex-col justify-center items-center gap-2 bg-white rounded-lg p-6 w-full shadow-sm mb-2 max-w-87.5 flex-1'>
+        <div className="grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-6 w-full max-w-277.5 py-20">
+            <div className='flex flex-col gap-2 w-full'>
+                <div className='flex flex-col justify-center items-center gap-2 bg-white rounded-lg p-6 w-full shadow-sm mb-2 flex-1'>
                     <Image src={selectedFriend.picture} alt={selectedFriend.name} width={80} height={80} className='rounded-full' />
                     <h2 className='font-semibold text-[20px]'>{selectedFriend.name}</h2>
                     
@@ -75,7 +75,7 @@ const FriendsDetails = ({ selectedFriend }) => {
                 </button>
             </div>
 
-            <div className='grid grid-cols-3 gap-6'>
+            <div className='grid grid-cols-2 sm:grid-cols-3 gap-6 text-center'>
                 <div className='flex flex-col p-8 justify-center items-center bg-white rounded-lg shadow-md w-full h-33.5'>
                     <h2 className='text-[#244D3F] text-[25px] font-semibold'>{selectedFriend.days_since_contact}</h2>
                     <p className='text-[18px] text-[#64748B]'>Days Since Contact</p>
@@ -99,10 +99,10 @@ const FriendsDetails = ({ selectedFriend }) => {
 
                 <div className='col-span-full flex flex-col p-6 justify-center items-start bg-white rounded-lg shadow-md w-full gap-4 min-h-46.25'>
                     <p className='text-[20px] text-[#244D3F] font-medium'>Quick Check-In</p>
-                    <div className='flex justify-between items-center w-full gap-4 flex-1'>
-                        <button onClick={() => handleTimelineUpdate(selectedFriend,'Call')} className='flex flex-col btn btn-soft p-4 flex-1 h-full text-[18px] hover:bg-[#1a3b2d] hover:text-white rounded-xl'><LuPhoneCall />Call</button>
-                        <button onClick={() => handleTimelineUpdate(selectedFriend,'Text')} className='flex flex-col btn btn-soft p-4 flex-1 h-full text-[18px] hover:bg-[#1a3b2d] hover:text-white rounded-xl'><BsChatText />Text</button>
-                        <button onClick={() => handleTimelineUpdate(selectedFriend,'Video')} className='flex flex-col btn btn-soft p-4 flex-1 h-full text-[18px] hover:bg-[#1a3b2d] hover:text-white rounded-xl'><LuVideo />Video</button>
+                    <div className='flex flex-col sm:flex-row justify-between items-center w-full gap-4 flex-1'>
+                        <button onClick={() => handleTimelineUpdate(selectedFriend,'Call')} className='flex flex-col btn btn-soft p-4 flex-1 h-full w-full text-[18px] hover:bg-[#1a3b2d] hover:text-white rounded-xl'><LuPhoneCall />Call</button>
+                        <button onClick={() => handleTimelineUpdate(selectedFriend,'Text')} className='flex flex-col btn btn-soft p-4 flex-1 h-full w-full text-[18px] hover:bg-[#1a3b2d] hover:text-white rounded-xl'><BsChatText />Text</button>
+                        <button onClick={() => handleTimelineUpdate(selectedFriend,'Video')} className='flex flex-col btn btn-soft p-4 flex-1 h-full w-full text-[18px] hover:bg-[#1a3b2d] hover:text-white rounded-xl'><LuVideo />Video</button>
                     </div>
                 </div>
             </div>

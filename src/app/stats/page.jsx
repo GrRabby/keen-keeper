@@ -13,7 +13,7 @@ export default function DonutChart() {
         fill: COLORS[i],
         }));
     return (
-        <main className="flex flex-col flex-1 items-center justify-center bg-[#F8FAFC] dark:bg-black">
+        <main className="flex flex-col flex-1 items-center justify-center bg-[#F8FAFC] dark:bg-black px-10">
             <div className="w-full max-w-277.5 mt-20 mx-auto">
                 <h2 className="font-bold text-[48px] text-[#1F2937]">Friendship Analytics</h2>
             </div>

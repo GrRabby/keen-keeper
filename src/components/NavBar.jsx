@@ -9,12 +9,12 @@ import { usePathname } from "next/navigation";
 const NavBar = () => {
     const pathname = usePathname()
     return (
-        <div className="navbar bg-base-100 shadow-sm px-20">
+        <div className="navbar bg-base-100 shadow-sm sm:flex-row justify-between px-20 flex-col gap-5">
             <div className="navbar-start">
                 <Image src={Logo} alt="Logo" />
             </div>
 
-            <div className="navbar-end gap-4">
+            <div className="flex">
                 <Link href="/" className={ `${pathname === '/' ? 'text-white bg-[#244D3F]' : ''} flex items-center gap-1 p-2 rounded-md` }>
                     <FaHome className="text-xl" />
                     <span className="leading-none text-[16px]">Home</span>

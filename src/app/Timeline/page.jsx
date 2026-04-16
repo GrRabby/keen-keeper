@@ -10,8 +10,6 @@ export default function TimelinePage() {
     const [filter, setFilter] = React.useState('All');
     const {timeline} = useContext(TimelineContext)
     const [filteredTimeline,setfilteredTimeline] = useState(timeline)
-    
-    console.log(timeline)
     React.useEffect(() => {        
         let filtered = timeline.filter(item => {
             if(filter === "All"){
@@ -41,22 +39,22 @@ export default function TimelinePage() {
     }
         
     return (
-        <main className="flex-1 bg-[#F8FAFC] dark:bg-black">
+        <main className="flex-1 bg-[#F8FAFC] dark:bg-black px-10">
             <div className="flex flex-col items-start justify-start gap-6 w-full max-w-277.5 my-10 mx-auto">
                 <h1 className="text-3xl font-bold">Timeline</h1>
-                <div className='flex justify-start items-center gap-5 w-full bg-[#ffffff] p-3 rounded-lg shadow-sm'>
+                <div className='bg-white w-full p-5 flex flex-col justify-center items-center gap-5 rounded-lg shadow-sm sm:flex-row sm:justify-between'>
                     <select onChange={(e) => {
                                 setFilter(e.target.value)
                             }
-                        } defaultValue="All" className="select select-m w-52">
+                        } defaultValue="All" className="select select-m w-56">
                         <option disabled={true}>Filter timeline</option>
                         <option>All</option>
                         <option>Call</option>
                         <option>Text</option>
                         <option>Video</option>
                     </select>
-                    <div className='flex justify-between items-center w-full gap-5'>
-                        <label className="input max-w-50">
+                    <div className='flex flex-col justify-between items-center w-full gap-5 sm:flex-row'>
+                        <label className="input max-w-52">
                             <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <g
                                 strokeLinejoin="round"

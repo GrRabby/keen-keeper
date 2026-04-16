@@ -8,7 +8,7 @@ export default async function FriendsDetailsPage({ params }) {
     const allFriends = JSON.parse(jsonData);
     const selectedFriend = allFriends.find(friend => friend.id === parseInt(FriendID));
     return (
-        <main className="flex flex-col flex-1 items-center justify-center bg-[#F8FAFC] dark:bg-black">
+        <main className="flex flex-col flex-1 items-center justify-center bg-[#F8FAFC] dark:bg-black px-10">
             <FriendsDetails selectedFriend={selectedFriend} />
         </main>
     );
