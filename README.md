@@ -158,7 +158,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 🌐 Connect
 
-[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=flat&logo=facebook&logoColor=white)]([https://facebook.com](https://www.facebook.com/gr.rabby.599952))
+[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=flat&logo=facebook&logoColor=white)](https://www.facebook.com/gr.rabby.599952)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/gulam-robbani)
 
 ---
